@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* COLOR */
+:root {
+--Violet: hsl(257, 40%, 49%);
+--Soft_Magenta: hsl(300, 69%, 71%);
+}
+
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background: var(--Violet);
+    background-image: url(images/bg-desktop.svg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    padding: 55px 80px 40px;
+    color: white;
+    height: 100vh;
+}
+
+header img {
+    width: 200px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 55.391% 44.609%;
+/*     grid-template-columns: minmax(auto, max-content) 1fr; */
+    grid-template-rows: 1fr;
+    margin-top: 80px;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    margin: 45px 0 0 55px;
+}
+
+.text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.45rem;
+    font-weight: 600;
+}
+
+.text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.03em;
+    line-height: 1.6rem;
+    margin: 25px 0px 25px;
+}
+
+.button {
+    height: 60px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 45px;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 10px 5px 4px rgba(0,0,0,0.2); 
+    box-shadow: 3px 6px 10px -1px rgba(0,0,0,0.3); 
+}
+
+.button:hover,
+.button:hover a {
+    background-color: var(--Soft_Magenta);
+    color: white;
+}
+
+.button a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #655596;
+}
+
+.medias {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    bottom: 40px;
+    right: 80px;
+}
+
+.medias a {
+    text-decoration: none;
+    color: white;
+}
+
+.medias i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.medias i:hover {
+    color: var(--Soft_Magenta);
+    border-color: var(--Soft_Magenta);;
+}
+
+.fab {
+    font-size: 1.26rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 1315px) {
+    body {
+        background-size: cover; 
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        margin-top: 80px;
+    }
+
+    .illustration {
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .text {
+        text-align: center;
+        margin: 70px 0 0 0;
+    }
+
+    .text p {
+        font-size: 1.3rem;
+        letter-spacing: 0.01rem;
+        line-height: 2rem;
+        margin: 25px 0px 40px;
+    }
+
+    .button {
+        height: 60px;
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    .medias {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        float: none;
+        padding: 90px 0 60px 0;
+        right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+        background-size: contain; 
+        padding: 40px 10% 80px 10%;
+        height: 100vh;
+    }
+    
+    header img {
+        width: 170px;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        margin-top: 80px;
+    }
+
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .text {
+        text-align: center;
+        margin: 70px 0 0 0;
+    }
+
+    .text p {
+        font-size: 1.3rem;
+        letter-spacing: 0.01rem;
+        line-height: 2rem;
+        margin: 25px 0px 40px;
+    }
+
+    .button {
+        height: 60px;
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    .medias {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        float: none;
+        padding: 90px 0 60px 0;
+        right: 0;
+    }
+}
