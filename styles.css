@@ -32,7 +32,6 @@ header img {
 .grid {
     display: grid;
     grid-template-columns: 55.391% 44.609%;
-/*     grid-template-columns: minmax(auto, max-content) 1fr; */
     grid-template-rows: 1fr;
     margin-top: 80px;
 }
@@ -70,19 +69,22 @@ header img {
     border-radius: 45px;
     cursor: pointer;
     -webkit-box-shadow: 5px 10px 5px 4px rgba(0,0,0,0.2); 
-    box-shadow: 3px 6px 10px -1px rgba(0,0,0,0.3); 
+    box-shadow: 3px 6px 10px -1px rgba(0,0,0,0.3);
+    transition: all .3s ease-out;
 }
 
-.button:hover,
-.button:hover a {
+.button:hover {
     background-color: var(--Soft_Magenta);
-    color: white;
 }
 
 .button a {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: #655596;
+}
+
+.button:hover a {
+    color: white;
 }
 
 .medias {
@@ -107,6 +109,7 @@ header img {
     width: 40px;
     border: 1px solid white;
     border-radius: 50%;
+    transition: all .3s ease-out;
 }
 
 .medias i:hover {
