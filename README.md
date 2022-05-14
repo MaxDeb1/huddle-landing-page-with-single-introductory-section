@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MaxDeb1/huddle-landing-page-with-single-introductory-section)
-- Live Site URL: [Add live site URL here](https://maxdeb1.github.io/huddle-landing-page-with-single-introductory-section/)
+- Solution URL: https://github.com/MaxDeb1/huddle-landing-page-with-single-introductory-section
+- Live Site URL: https://maxdeb1.github.io/huddle-landing-page-with-single-introductory-section/
 
 ## My process
 
